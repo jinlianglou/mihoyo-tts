@@ -1,0 +1,41 @@
+{
+  "{{chrome}}.manifest_version": 3,
+  "{{edge}}.manifest_version": 3,
+  "{{firefox}}.manifest_version": 2,
+  "name": "文本转语音",
+  "description": "文本转语音",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/icon-32.png",
+    "48": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "src/background/index.ts"
+  },
+  "{{chrome}}.action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "{{edge}}.action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "{{firefox}}.browser_action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content-script/index.ts"]
+    }
+  ],
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "storage",
+    "{{firefox}}.<all_urls>"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}

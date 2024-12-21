@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "types": ["vite/client"],
+    // "esModuleInterop": true,
+    "module": "NodeNext",
+    "moduleResolution": "node16",
+    "noUnusedLocals": false, // 将未使用的局部变量设置为警告
+    "noUnusedParameters": false,  // 将未使用的参数设置为警告
+    "noEmit": true, // 设置为不生成编译后的文件
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true
+  }
+}
