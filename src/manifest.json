@@ -2,9 +2,10 @@
   "{{chrome}}.manifest_version": 3,
   "{{edge}}.manifest_version": 3,
   "{{firefox}}.manifest_version": 2,
-  "name": "文本转语音",
-  "description": "文本转语音",
   "version": "1.0",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "default_locale": "zh_CN",
   "icons": {
     "16": "icons/icon-32.png",
     "48": "icons/icon-64.png",
